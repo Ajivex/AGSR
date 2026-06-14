@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGSR Engineering Pte. Ltd. | Mechanical, Electrical & Structural Engineering Singapore</title>
+  <meta name="description" content="AGSR Engineering Pte. Ltd. — Singapore's trusted mechanical, electrical, piping fabrication, and plant maintenance engineering company. Quality. Precision. Safety." />
+  <meta name="keywords" content="Engineering Company Singapore, Mechanical Engineering Singapore, Electrical Contractor Singapore, Piping Fabrication Singapore, Plant Maintenance Singapore, Structural Fabrication Singapore" />
+  <meta property="og:title" content="AGSR Engineering Pte. Ltd." />
+  <meta property="og:description" content="Trusted engineering partner in Singapore for mechanical, electrical, structural, and industrial maintenance projects." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://www.agsrengineering.com.sg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@40… rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+</head>
+<body>
+ 
+<!-- NAV -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="AGSR Engineering Home">
+  <img src="images/logo.png" alt="AGSR Engineering Logo" class="nav-logo-img">
+      <!--<div class="nav-logo-icon" aria-hidden="true"></div>-->
+      <div class="nav-logo-text">
+        AGSR Engineering Pte. Ltd.
+       <span>UEN: 202342703Z</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#team">Team</a></li>
+      <!--<li><a href="#certificates">Certifications</a></li>
+      <li><a href="#reviews">Reviews</a></li> -->
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+ 
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="#hero" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#team" onclick="closeMobile()">Team</a>
+<!-- <a href="#certificates" onclick="closeMobile()">Certifications</a>
+  <a href="#reviews" onclick="closeMobile()">Reviews</a>-->
+  <a href="#contact" onclick="closeMobile()">Contact Us</a>
+</div>
+ 
+<!-- HERO -->
+<section id="hero" aria-label="Hero">
+  <img src="images/media.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.15;pointer-events:none;z-index:0;" aria-hidden="true" onerror="this.style.display='none'" />
+  <div class="hero-grid-overlay" aria-hidden="true"></div>
+  <div class="hero-beam" aria-hidden="true"></div>
+  <div class="hero-beam-accent" aria-hidden="true"></div>
+  <div class="hero-inner hero-grid">
+
+<!-- LEFT SIDE -->
+  <div class="hero-left">
+    <p class="hero-eyebrow">Engineering Excellence for Industrial & <br> Commercaial Projects in Singapore Since 2023</p>
+ 
+    <h1 class="hero-title">
+      Built to<br>
+      <em>Precision.</em><br>
+      Built to Last.
+    </h1>
+ 
+    <p class="hero-sub">
+      AGSR Engineering Pte Ltd. is a trusted provider of  Engineering Support Services in Singapore. 
+    We deliver safe, reliable, and cost-effective Engineering solutions for industrial plants, Commercaial buildings, constrution projects, and 
+    Infrastructure developments.
+    </p>
+  </div>
+ 
+  <!-- RIGHT SIDE (NEW) -->
+  <div class="hero-right">
+ 
+  <div class="hero-right-box">
+ 
+    <!-- LEFT: POINTS -->
+    <ul class="hero-points">
+      <li> Mechanical Engineering Services</li>
+      <li> Electrical & Instrumentation Installation</li>
+      <li> Structural Fabrication & inspections</li>
+      <li> Piping Fabrication & Hydrostatic Testing</li>
+      <li> Fire Alarm & ELV Sytems</li>
+    <li> Plant Manitenance Services</li>
+    
+    </ul>
+ 
+  </div>
+ 
+</div><!--
+  <div class="hero-right">
+  
+    <ul class="hero-points">
+      <li>✔ 20+ Years Industry Experience</li>
+      <li>✔ 500+ Projects Delivered</li>
+      <li>✔ ISO 9001 Certified</li>
+      <li>✔ 24/7 Maintenance Support</li>
+      <li>✔ Trusted by MNC Clients</li>
+    </ul>
+  </div>
+ 
+</div>
+ 
+    <!-- <p class="hero-eyebrow">Engineering Excellence for Industrial & Commercaial Projects in Singapore Since 2023</p>
+    <h1 class="hero-title">
+      Built to<br>
+      <em>Precision.</em><br>
+      Built to Last.
+    </h1>
+    <p class="hero-sub">
+      AGSR Engineering Pte. Ltd. delivers world-class mechanical, electrical, structural, and industrial maintenance solutions across Singapore's most demanding industrial sectors.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Get a Free Quote
+      </a>
+      <a href="#projects" class="btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        View Our Projects
+      </a> X
+    </div>
+  <br>
+  <br>
+  <br>
+    <div class="hero-stats" aria-label="Company statistics">
+      <div class="stat-item">
+        <div class="stat-num"><span id="stat-years">0</span><span>+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span id="stat-projects">0</span><span>+</span></div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span id="stat-clients">0</span><span>+</span></div>
+        <div class="stat-label">Satisfied Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span id="stat-team">0</span><span>+</span></div>
+        <div class="stat-label">Skilled Engineers</div>
+      </div>
+    </div> -->
+  </div>
+</section>
+ 
+<!-- ABOUT -->
+<section id="about" aria-label="About AGSR Engineering">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual fade-up">
+        <div class="about-image-box" aria-hidden="true" style="padding:0;overflow:hidden;">
+          <img src="images/media.jpg" alt="AGSR Engineering facility" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.style.display='none'" />
+          <div class="about-badge">
+            <strong>20+</strong>
+            Years of Engineering Excellence
+          </div>
+        </div>
+      </div>
+      <div class="about-text fade-up" style="transition-delay:0.15s">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">Singapore's Trusted Engineering Partner</h2>
+        <p class="section-desc">AGSR Engineering Pte. Ltd. is a full-spectrum engineering company headquartered in Singapore, delivering precision-engineered solutions to industries including oil & gas, petrochemical, marine, pharmaceutical, and manufacturing since 2005.</p>
+        <ul class="about-points" aria-label="Company highlights">
+          <li>BizSAFE Level 3 certified — safety first in every project</li>
+          <li>ISO 9001:2015 quality management system</li>
+          <li>In-house fabrication workshop in Singapore</li>
+          <li>24/7 emergency plant maintenance support</li>
+          <li>End-to-end project management from design to commissioning</li>
+          <li>Trusted by MNCs and major industrial players in Singapore</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="margin-top:2rem; display:inline-flex;">Learn More About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- SERVICES -->
+<section id="services" aria-label="Our Services">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="section-eyebrow" style="color: rgba(240,90,40,0.9)">What We Do</p>
+      <h2 class="section-title light">Engineering Services</h2>
+      <p class="section-desc light">Comprehensive engineering capabilities delivered with precision, safety, and efficiency across Singapore's industrial landscape.</p>
+    </div>
+    <div class="services-grid" role="list">
+ 
+      <article class="service-card fade-up mech" role="listitem">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <h3>Mechanical Engineering</h3>
+        <p>Design, fabrication, and installation of mechanical systems including rotating equipment, heat exchangers, pressure vessels, and process piping for industrial facilities.</p>
+      </article>
+ 
+      <article class="service-card fade-up electric" role="listitem" style="transition-delay:0.08s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Electrical Works</h3>
+        <p>Licensed electrical contracting services covering LV/HV installation, switchboard upgrades, motor control centers, instrumentation, and industrial wiring.</p>
+      </article>
+ 
+      <article class="service-card fade-up pipe" role="listitem" style="transition-delay:0.16s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <h3>Piping Fabrication</h3>
+        <p>Custom piping design, fabrication, and installation for process plants. We handle carbon steel, stainless steel, duplex, and GRE piping systems to ASME standards.</p>
+      </article>
+ 
+      <article class="service-card fade-up structural" role="listitem" style="transition-delay:0.04s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>Structural Fabrication</h3>
+        <p>Steel structural fabrication and erection for platforms, skids, mezzanines, cable trays, and industrial support structures, designed and built to code.</p>
+      </article>
+ 
+      <article class="service-card fade-up plant" role="listitem" style="transition-delay:0.12s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Plant Maintenance</h3>
+        <p>Scheduled and emergency plant maintenance services — turnaround support, predictive maintenance, mechanical overhauls, and shutdown planning for process plants.</p>
+      </article>
+ 
+      <article class="service-card fade-up safety" role="listitem" style="transition-delay:0.2s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Safety & Inspection</h3>
+        <p>Statutory inspection, non-destructive testing (NDT), hydrostatic testing, and safety audits to ensure your plant operates within regulatory compliance at all times.</p>
+      </article>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- PROJECTS -->
+<section id="projects" aria-label="Our Projects">
+  <div class="section-inner">
+    <div class="section-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <p class="section-eyebrow">Our Work</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">Delivering complex engineering projects on time, on budget, and to specification.</p>
+      </div>
+      <div class="projects-tabs" role="tablist" aria-label="Project categories">
+        <button class="tab-btn active" onclick="filterProjects('all')" role="tab" aria-selected="true">All</button>
+        <button class="tab-btn" onclick="filterProjects('mechanical')" role="tab" aria-selected="false">Mechanical</button>
+        <button class="tab-btn" onclick="filterProjects('electrical')" role="tab" aria-selected="false">Electrical</button>
+      </div>
+    </div>
+ 
+    <div class="projects-grid" id="projectsGrid" role="list">
+ 
+      <article class="project-card fade-up" data-category="mechanical" role="listitem" onclick="openLightbox('Offshore Platform Piping Overhaul','mechanical','Complete piping replacement and structural reinforcement for a 20,000-tonne offshore production platform. Included 1.2km of process piping, pressure vessel modifications, and ASME-compliant hydrostatic testing across a 6-week turnaround shutdown.','🏗️')">
+        <div class="project-thumb" data-fallback="linear-gradient(135deg,#1C3D5A,#0D1B2A)">
+          <img class="proj-img" src="images/media.jpg" alt="Offshore platform piping overhaul" loading="lazy" onerror="this.style.display='none';this.parentElement.style.background=this.parentElement.dataset.fallback" />
+          <div class="overlay" aria-hidden="true"><div class="overlay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+        </div>
+        <div class="project-info">
+          <p class="project-tag">Mechanical · Piping</p>
+          <h3>Offshore Platform Piping Overhaul</h3>
+          <p>1.2km of process piping · ASME certified · 6-week turnaround</p>
+        </div>
+      </article>
+ 
+      <article class="project-card fade-up" data-category="electrical" role="listitem" style="transition-delay:0.08s" onclick="openLightbox('Pharmaceutical Plant Electrical Upgrade','electrical','Full LV/HV electrical upgrade for a GMP pharmaceutical manufacturing facility. Replaced legacy switchboards, installed new MCC panels, upgraded emergency generator systems, and implemented SCADA-compatible instrumentation.','⚡')">
+        <div class="project-thumb" data-fallback="linear-gradient(135deg,#2D1B4E,#1C3D5A)">
+          <img class="proj-img" src="images/media.jpg" alt="Pharmaceutical plant electrical upgrade" loading="lazy" onerror="this.style.display='none';this.parentElement.style.background=this.parentElement.dataset.fallback" />
+          <div class="overlay" aria-hidden="true"><div class="overlay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+        </div>
+        <div class="project-info">
+          <p class="project-tag">Electrical · MCC</p>
+          <h3>Pharmaceutical Plant Electrical Upgrade</h3>
+          <p>LV/HV systems · SCADA integration · GMP compliance</p>
+        </div>
+      </article>
+ 
+      <article class="project-card fade-up" data-category="mechanical" role="listitem" style="transition-delay:0.16s" onclick="openLightbox('Refinery Turnaround Maintenance','mechanical','Planned 21-day turnaround maintenance for a major Singapore refinery — covering heat exchanger bundle replacements, pump overhauls, pressure relief valve servicing, and statutory inspections across 4 process units.','🔧')">
+        <div class="project-thumb" data-fallback="linear-gradient(135deg,#3D2B1C,#5A3D1C)">
+          <img class="proj-img" src="images/media.jpg" alt="Refinery turnaround maintenance" loading="lazy" onerror="this.style.display='none';this.parentElement.style.background=this.parentElement.dataset.fallback" />
+          <div class="overlay" aria-hidden="true"><div class="overlay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+        </div>
+        <div class="project-info">
+          <p class="project-tag">Mechanical · Maintenance</p>
+          <h3>Refinery Turnaround Maintenance</h3>
+          <p>21-day shutdown · 4 process units · full statutory inspection</p>
+        </div>
+      </article>
+ 
+      <article class="project-card fade-up" data-category="electrical" role="listitem" onclick="openLightbox('Marine Shipyard Electrical Refit','electrical','Electrical refit and instrumentation works for two VLCC tankers at a Tuas shipyard. Scope included bridge navigation system upgrades, engine room electrical overhauls, and class society-approved cable installation.','🚢')">
+        <div class="project-thumb" data-fallback="linear-gradient(135deg,#1A3A4A,#2A5A6A)">
+          <img class="proj-img" src="images/media.jpg" alt="Marine shipyard electrical refit" loading="lazy" onerror="this.style.display='none';this.parentElement.style.background=this.parentElement.dataset.fallback" />
+          <div class="overlay" aria-hidden="true"><div class="overlay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+        </div>
+        <div class="project-info">
+          <p class="project-tag">Electrical · Marine</p>
+          <h3>Marine Shipyard Electrical Refit</h3>
+          <p>VLCC tankers · class-approved · navigation systems</p>
+        </div>
+      </article>
+ 
+      <article class="project-card fade-up" data-category="mechanical" role="listitem" style="transition-delay:0.08s" onclick="openLightbox('Chemical Plant Structural Steel','mechanical','Design and erection of 280 tonnes of structural steel for a new chemical processing facility in Jurong Island. Included pipe racks, equipment skids, elevated platforms, and access structures, all per AISC standards.','🏭')">
+        <div class="project-thumb" data-fallback="linear-gradient(135deg,#1B2D1A,#2D4A2B)">
+          <img class="proj-img" src="images/media.jpg" alt="Chemical plant structural steel" loading="lazy" onerror="this.style.display='none';this.parentElement.style.background=this.parentElement.dataset.fallback" />
+          <div class="overlay" aria-hidden="true"><div class="overlay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+        </div>
+        <div class="project-info">
+          <p class="project-tag">Structural · Fabrication</p>
+          <h3>Chemical Plant Structural Steel</h3>
+          <p>280 tonnes steel · Jurong Island · AISC standards</p>
+        </div>
+      </article>
+ 
+      <article class="project-card fade-up" data-category="electrical" role="listitem" style="transition-delay:0.16s" onclick="openLightbox('Data Centre Power Infrastructure','electrical','Critical power infrastructure works for a Tier III data centre — including UPS systems, precision air conditioning power feeds, generator auto-transfer systems, and comprehensive load testing to ensure 99.99% uptime readiness.','💻')">
+        <div class="project-thumb" data-fallback="linear-gradient(135deg,#1B1B3A,#2B2B5A)">
+          <img class="proj-img" src="images/media.jpg" alt="Data centre power infrastructure" loading="lazy" onerror="this.style.display='none';this.parentElement.style.background=this.parentElement.dataset.fallback" />
+          <div class="overlay" aria-hidden="true"><div class="overlay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div></div>
+        </div>
+        <div class="project-info">
+          <p class="project-tag">Electrical · Critical Power</p>
+          <h3>Data Centre Power Infrastructure</h3>
+          <p>Tier III · UPS & generator systems · 99.99% uptime</p>
+        </div>
+      </article>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- TEAM -->
+<section id="team" aria-label="Our Team">
+  <div class="section-inner">
+    <div class="section-header" style="text-align:center; max-width:600px; margin:0 auto 3rem;">
+      <p class="section-eyebrow" style="justify-content:center">The Experts</p>
+      <h2 class="section-title">Leadership Team</h2>
+      <p class="section-desc" style="margin:0.8rem auto 0">Two decades of combined engineering expertise driving every project to success.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card fade-up">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#F05A28,#C84519)">GA</div>
+        <h3>Geetha</h3>
+        <p class="team-role">Director</p>
+       <!-- <p class="team-exp">25 Years Experience · MEng (NUS)</p> -->
+      </div>
+    <div class="team-card fade-up" style="transition-delay:0.2s">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#2D5A3A,#1A3A22)">SI</div>
+        <h3>Sumathi</h3>
+        <p class="team-role">Hr & Admin</p>
+        <!--<p class="team-exp">18 Years · Licensed EE (EMA)</p>-->
+      </div>
+      <div class="team-card fade-up" style="transition-delay:0.1s">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#1C3D5A,#0D1B2A)">AN</div>
+        <h3>Adiaman</h3>
+        <p class="team-role">Project Manager</p>
+       <!-- <p class="team-exp">20 Years · PEng Registered</p>-->
+      </div>
+      <div class="team-card fade-up" style="transition-delay:0.3s">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#5A3D1C,#3D2B10)">RR</div>
+        <h3>Rajkumar</h3>
+        <p class="team-role">Project Coordinator (Electrical & Instrumentaion)</p>
+        <!--<p class="team-exp">15 Years · NEBOSH Certified</p>-->
+      </div>
+    <div class="team-card fade-up" style="transition-delay:0.3s">
+        <div class="team-avatar" style="background:linear-gradient(135deg, #4CB8C4, #3CD3AD)">DR</div>
+        <h3>Dinesh Kumar</h3>
+        <p class="team-role">Project Engineer (Mechanical)</p>
+        <!--<p class="team-exp">15 Years · NEBOSH Certified</p>-->
+      </div>
+    <div class="team-card fade-up" style="transition-delay:0.3s">
+        <div class="team-avatar" style="background:linear-gradient(135deg, #FF7E5F, #FEB47B)">MM</div>
+        <h3>Muruganandham</h3>
+        <p class="team-role">Constrution Manager</p>
+        <!--<p class="team-exp">15 Years · NEBOSH Certified</p>-->
+      </div>
+    <div class="team-card fade-up" style="transition-delay:0.3s">
+        <div class="team-avatar" style="background:linear-gradient(135deg, #1A3636, #40534C)">AX</div>
+        <h3>Ajivex</h3>
+        <p class="team-role">IT Support</p>
+       <!-- <p class="team-exp">15 Years · NEBOSH Certified</p>-->
+      </div>
+    </div>
+  </div>
+</section>
+ 
+
+<!-- CERTIFICATES
+<section id="certificates" aria-label="Certifications and Accreditations">
+  <div class="section-inner">
+    <div class="section-header" style="text-align:center; max-width:600px; margin:0 auto 3rem;">
+      <p class="section-eyebrow" style="justify-content:center">Our Credentials</p>
+      <h2 class="section-title">Certifications & Accreditations</h2>
+      <p class="section-desc" style="margin:0.8rem auto 0">Licensed, certified, and audited to the highest industry standards.</p>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card fade-up">
+        <div class="cert-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>BizSAFE Level 3</h3>
+        <p>Workplace Safety & Health Act compliance. Risk management system certified by WSH Council Singapore.</p>
+      </div>
+      <div class="cert-card fade-up" style="transition-delay:0.1s">
+        <div class="cert-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>ISO 9001:2015</h3>
+        <p>International Quality Management System certification ensuring consistent, high-quality engineering delivery.</p>
+      </div>
+      <div class="cert-card fade-up" style="transition-delay:0.2s">
+        <div class="cert-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <h3>MOM Licensed Contractor</h3>
+        <p>Ministry of Manpower approved contractor for pressure vessel and lifting equipment works in Singapore.</p>
+      </div>
+      <div class="cert-card fade-up" style="transition-delay:0.3s">
+        <div class="cert-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>EMA Licensed Electrical</h3>
+        <p>Energy Market Authority licensed electrical worker and contractor for LV and HV electrical installations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!-- REVIEWS 
+<section id="reviews" aria-label="Client Reviews">
+  <div class="section-inner">
+    <div class="section-header" style="text-align:center; max-width:600px; margin:0 auto 3rem;">
+      <p class="section-eyebrow" style="color:rgba(240,90,40,0.9); justify-content:center">What Clients Say</p>
+      <h2 class="section-title light">Trusted by Industry Leaders</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fade-up">
+        <div class="review-quote">"</div>
+        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <p class="review-text">AGSR delivered our complete plant turnaround two days ahead of schedule without compromising on safety or quality. Their mechanical team's expertise is second to none in Singapore.</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">TL</div>
+          <div>
+            <div class="review-author-name">Thomas Lim</div>
+            <div class="review-author-co">Plant Manager · ExxonMobil Singapore</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card fade-up" style="transition-delay:0.1s">
+        <div class="review-quote">"</div>
+        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <p class="review-text">We've engaged AGSR for our Jurong Island facility electrical works for 7 years running. Reliable, safety-conscious, and always up to code. Highly recommended to any MNC operating in Singapore.</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">PK</div>
+          <div>
+            <div class="review-author-name">Priya Krishnan</div>
+            <div class="review-author-co">Facilities Director · Merck Singapore</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card fade-up" style="transition-delay:0.2s">
+        <div class="review-quote">"</div>
+        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <p class="review-text">The structural steel fabrication for our new chemical processing unit was completed to exact specification. AGSR's project management and on-site coordination were outstanding throughout.</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">AW</div>
+          <div>
+            <div class="review-author-name">Andrew Wong</div>
+            <div class="review-author-co">Project Director · Shell Eastern Petroleum</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<!-- CONTACT -->
+<section id="contact" aria-label="Contact Us">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title" style="font-size:clamp(1.8rem,3vw,2.4rem)">Start Your Engineering Project Today</h2>
+        <p class="section-desc" style="margin-top:0.8rem; max-width:100%">Fill in the form and our team will get back to you within 24 hours. For urgent enquiries, reach us directly on WhatsApp.</p>
+        <div class="contact-details" style="margin-top:2rem">
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+
+            <a>  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> </a>
+            </div>
+            <div>
+              <div class="contact-item-label">Office Address</div>
+              <div class="contact-item-text">5 Soon Lee Street #04-14 Pioneer Point, Singapore 627607<br><small style="color:#aaa">Exact address shared on inquiry</small></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label">Phone / WhatsApp</div>
+              <div class="contact-item-text">+65 89585741</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-text">info@agsrengineering.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact-item-label">Business Hours</div>
+              <div class="contact-item-text">Mon–Fri: 8:00AM – 6:00PM<br>Sat: 8:00AM – 1:00PM</div>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/89585741?text=Hello%20AGSR%20Engineering%2C%20I%20would%20like%20to%20enquire%20about… class="wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+ 
+      <div>
+        <form class="contact-form" id="contactForm" novalidate aria-label="Contact enquiry form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="e.g. John Tan" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your company name" autocomplete="organization" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+65 9XXX XXXX" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Required</label>
+            <select id="service" name="service">
+              <option value="">— Select a service —</option>
+              <option>Mechanical Engineering</option>
+              <option>Electrical Works</option>
+              <option>Piping Fabrication</option>
+              <option>Structural Fabrication</option>
+              <option>Plant Maintenance</option>
+              <option>Safety & Inspection</option>
+              <option>Other / General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details *</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project — scope, timeline, location, and any specific requirements..." required></textarea>
+          </div>
+          <div class="form-status" id="formStatus" role="alert" aria-live="polite"></div>
+          <button type="submit" class="form-submit" id="submitBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Enquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-logo">AGSR Engineering Pte. Ltd.</div>
+  <div class="footer-social">
+
+  <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+    <ul class="footer-links" aria-label="Footer navigation">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 AGSR Engineering Pte. Ltd. UEN: 202342703Z<br>
+    Website by <a href="#" aria-label="Developer">AJIVEX</a></p>
+  </div>
+ 
+</footer>
+<div class="floating-contact">
+  <a href="https://wa.me/6590000000?text=Hello%20AGSR%20Engineering%2C%20I%20would%20like%20to%20enquire%20abo…
+  <img src ="images/con.png">
+  </a>
+</div>
+<!-- WhatsApp FAB 
+<a href="https://wa.me/6590000000?text=Hello%20AGSR%20Engineering%2C%20I%20would%20like%20to%20enquire%20abo… class="wa-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat with AGSR Engineering on WhatsApp">
+  <span class="wa-fab-tooltip">Chat with us</span>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+-->
+<!-- PROJECT LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+  <div class="lightbox-content">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close project details">✕</button>
+    <div class="lightbox-emoji" id="lightboxEmoji" aria-hidden="true"></div>
+    <div class="lightbox-tag" id="lightboxTag"></div>
+    <h3 class="lightbox-title" id="lightboxTitle"></h3>
+    <p class="lightbox-desc" id="lightboxDesc"></p>
+  </div>
+</div>
+ 
+ 
+<script src="js/logger.js"></script>
+<script src="js/main.js"></script>
+ 
+</body>
+</html>
