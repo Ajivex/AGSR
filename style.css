@@ -53,11 +53,23 @@ nav.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
 .nav-cta { background: var(--orange); color: var(--white) !important; padding: 0.6rem 1.4rem; border-radius: 3px; transition: 0.3s; }
 .nav-cta:hover { background: var(--orange-dark) !important; }
 
+/* ─── HAMBURGER & MOBILE MENU (FIXED) ─── */
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; z-index: 1002;}
+.hamburger span { display: block; width: 25px; height: 3px; background: var(--white); transition: all 0.3s; border-radius: 2px;}
+.hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+.mobile-menu { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: var(--navy); z-index: 999; padding: 100px 2rem 2rem; flex-direction: column; align-items: center; gap: 2rem; }
+.mobile-menu.open { display: flex; animation: fadeIn 0.3s; }
+.mobile-menu a { color: var(--white); text-decoration: none; font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; text-transform: uppercase; transition: 0.3s; }
+.mobile-menu a:hover { color: var(--orange); }
+
 /* ─── HERO PARALLAX ─── */
 #hero {
   min-height: 90vh; position: relative; display: flex; align-items: center; overflow: hidden;
   background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1920');
-  background-size: cover; background-position: center; background-attachment: fixed; /* Parallax effect */
+  background-size: cover; background-position: center; background-attachment: fixed;
 }
 .hero-grid-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(13,27,42,0.95) 0%, rgba(28,61,90,0.8) 100%); }
 .hero-inner { max-width: 1280px; margin: 0 auto; padding: 6rem 2rem 4rem; position: relative; z-index: 1; width: 100%; }
@@ -137,14 +149,13 @@ section { position: relative; }
 .team-card:hover { border-color: var(--orange); transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
 .team-avatar-wrapper { position: relative; width: 100px; height: 100px; margin: 0 auto 1.5rem; }
 .team-avatar { width: 100%; height: 100%; border-radius: 4px; background: var(--steel); display: flex; align-items: center; justify-content: center; color: white; font-family: var(--font-display); font-size: 2.5rem; font-weight: bold; }
-/* Overlay Contacts */
 .team-social-overlay { position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; background: var(--white); padding: 4px; border-radius: 2px; border: 1px solid var(--grey-mid); }
 .team-social-overlay a { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; background: var(--grey-light); color: var(--navy); text-decoration: none; font-size: 0.85rem; border-radius: 2px; transition: 0.3s;}
 .team-social-overlay a:hover { background: var(--orange); color: var(--white); }
 .team-card h3 { font-family: var(--font-display); font-size: 1.2rem; color: var(--navy); text-transform: uppercase;}
 .team-role { color: var(--text-muted); font-size: 0.85rem; margin-top: 5px; }
 
-/* ─── REVIEWS SLIDER (COMMENTED OUT LOGIC STYLE) ─── */
+/* ─── REVIEWS SLIDER ─── */
 .review-slider-container { display: flex; align-items: center; justify-content: center; gap: 2rem; position: relative; max-width: 800px; margin: 0 auto; }
 .review-slide { text-align: center; background: var(--white); padding: 3rem; border-radius: 4px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 4px solid var(--orange); display: none;}
 .review-slide.active { display: block; animation: fadeIn 0.5s; }
@@ -207,9 +218,10 @@ footer { background: var(--navy); padding: 4rem 2rem 2rem; color: white; margin-
 @media(max-width: 768px){
   .nav-links { display: none; }
   .hamburger { display: flex; }
+  .bizsafe-badge { margin: 0 auto 1.5rem; display: block; width: fit-content; }
   .services-grid, .projects-grid, .team-grid { grid-template-columns: 1fr; }
   .footer-container { grid-template-columns: 1fr; text-align: center; }
   .footer-bottom { flex-direction: column; gap: 10px; }
   .scroll-fab { bottom: 20px; right: 20px; }
-  .top-bar { display: none; /* Hide top bar on mobile for clean look */ }
+  .top-bar { display: none; /* Hide top bar on mobile */ }
 }
