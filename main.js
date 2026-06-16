@@ -101,19 +101,70 @@ function slideReview(dir) {
 */
 
 // ─── CONTACT FORM ───
+// ─── CONTACT FORM ───
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzlFmIeDm_ypTxzEEUbSx5CH4KjG7CvicBJ4-DUtjiDeDJdOsOYcEi5p_yieooZTl6P/exec';
+
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
   e.preventDefault();
+
+  const form = e.target;
   const btn = document.getElementById('submitBtn');
+  const status = document.getElementById('formStatus');
+
+  const name = form.name.value.trim();
+  const email = form.email.value.trim();
+  const message = form.message.value.trim();
+
+  if (!name || !email || !message) {
+    status.className = 'form-status error';
+    status.textContent = 'Please fill in all required fields.';
+    return;
+  }
+
+  btn.disabled = true;
+  status.style.display = 'none';
   btn.innerHTML = 'Sending...';
-  
-  // Here Google Apps script fetch logic can be placed (from original file)
-  setTimeout(() => {
-    btn.innerHTML = 'Enquiry Sent ✓';
-    btn.style.background = '#28a745';
-    e.target.reset();
-    setTimeout(() => {
-        btn.innerHTML = 'Send Enquiry';
-        btn.style.background = '';
-    }, 3000);
-  }, 1500);
+
+  try {
+    const response = await fetch(SCRIPT_URL, {
+      method: 'POST',
+      // Added Content-Type to prevent simple CORS errors with Google Apps Script
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({
+        name: form.name.value,
+        company: form.company.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        service: form.service.value,
+        message: form.message.value
+      })
+    });
+
+    const text = await response.text();
+    console.log("Response:", text);
+    const result = JSON.parse(text);
+
+    if (result.success) {
+      status.className = 'form-status success';
+      status.style.display = 'block';
+      status.innerHTML = `✓ Enquiry submitted successfully.<br>Reference ID: <strong>${result.enquiryId || 'OK'}</strong>`;
+      form.reset();
+    } else {
+      throw new Error(result.error || 'Submission failed');
+    }
+
+  } catch (err) {
+    status.className = 'form-status error';
+    status.style.display = 'block';
+    status.textContent = 'ERROR: ' + err.message;
+    console.error(err);
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = `
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <line x1="22" y1="2" x2="11" y2="13"/>
+      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+    </svg> Send Enquiry
+  `;
 });
