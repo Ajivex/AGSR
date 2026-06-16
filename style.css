@@ -68,7 +68,7 @@ nav.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
 /* ─── HERO PARALLAX ─── */
 #hero {
   min-height: 90vh; position: relative; display: flex; align-items: center; overflow: hidden;
-  background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1920');
+  background-image: url('homepage.png');
   background-size: cover; background-position: center; background-attachment: fixed;
 }
 .hero-grid-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(13,27,42,0.95) 0%, rgba(28,61,90,0.8) 100%); }
